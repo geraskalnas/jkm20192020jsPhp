@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<!-- https://www.w3schools.com/css/tryit.asp?filename=trycss_template3 -->
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  background-color: #ddd;
+  padding: 10px;
+  height: 100%; 
+  position: relative
+  
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+}  
+  </style>
+  <style>
+  .active{
+    background-color: #ddd;
+    color: black;
+  }
+  </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".content>div").hide();
+  $("#pagr").show();
+  
+  $(".topnav>a").click(function(){
+    $(".content>div").hide();
+	$(".topnav>a").removeClass("active");
+	$(this).addClass("active");
+  });
+  
+  $("#npagr").click(function(){
+    $("#pagr").show();
+  });
+  $("#nprod").click(function(){
+    $("#prod").show();
+  });
+  $("#ngale").click(function(){
+    $("#gale").show();
+  });
+  $("#nkont").click(function(){
+    $("#kont").show();
+  });
+  
+});
+</script>
+</head>
+<body>
+<div class="topnav">
+  <a id="npagr" href="#">Pagrindinis</a>
+  <a id="nprod" href="#">Produktai</a>
+  <a id="ngale" href="#">Galerija</a>
+  <a id="nkont" href="#">Kontaktai</a>
+</div>
+
+<div class="content">
+  <div id="pagr">
+    <h2>Pagrindinis</h2>
+    <p>A topnav, content and a footer.</p>
+	
+  </div>
+  <div id="prod">
+    <h2>Produktai</h2>
+    <div>
+   	  <img alt="New items" src="https://downloads.jung.de/catalogue/images/200x200_png/BWG_LS1912_AL12-0K0_Kegel_1fach_AL2981.png" class="block-image">
+	  <img alt="AS range" src="https://downloads.jung.de/catalogue/pictures-custom/200x200_png/swg_serie_as.png" class="block-image">
+	  <img alt="Plug &amp; Light" src="https://downloads.jung.de/catalogue/images/200x200_png/BWG_Plug_and_Light.png" class="block-image">
+	  <img alt="Pilot lights" src="https://downloads.jung.de/catalogue/images/200x200_png/JUNG_A1520-OWWLNW.png" class="block-image">
+	</div>
+  </div>
+  <div id="gale">
+    <h2>Galerija</h2>
+    <img src="https://www.jung.de/~mi/6327/10843/ls990.png" alt="" title="LS990" width="458" height="458">
+	<img src="https://www.jung.de/~mi/7851/13007/ls-1912.jpg" alt="" title="LS990" width="458" height="458">
+	<img src="https://www.jung.de/~mi/6554/11089/ls-stainless-steel.jpg" alt="" title="LS990" width="458" height="458">
+	<img src="https://www.jung.de/~mi/5218/10140/les-couleurs.jpg" alt="" title="LS990" width="458" height="458">
+  </div>
+  <div id="kont">
+    <h2>Kontaktai</h2>
+    <div><strong>Rytinės Europos ir Centrinės Azijos JUNG logistikos centras<br><br>UAB „JUNG VILNIUS“</strong><br>
+Žirmūnų g. 68,<br>
+LT-09124 Vilnius, Lietuva<br>
+Tel.: + 370 5 236 19 19<br>
+Faks.: + 370 5 236 19 17<br>
+El.paštas: <a href="mailto:jung@jung.lt" title="JUNG Vilnius" target="_blank">jung@jung.lt</a><br>
+Svetainė: <a href="http://www.jung.lt" title="JUNG VILNIUS" target="_blank">www.jung.lt</a><br>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Footer</p>
+</div>
+</body>
+</html>
