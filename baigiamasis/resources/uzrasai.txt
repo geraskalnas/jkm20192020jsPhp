@@ -1,0 +1,3 @@
+$uri_parts = explode('?', $_SERVER['REQUEST_URI'], 2);
+basename(__FILE__, '.php'); 
+https://jkm.vma.lm.lt/pluginfile.php/814/mod_resource/content/2/MySQL.pdf
